@@ -24,7 +24,12 @@ class LocalStorageService(BaseStorageService):
             self.upload_dir = backend_dir / "uploads"
         else:
             self.upload_dir = Path(upload_dir)
-        self.upload_dir.mkdir(parents=True, exist_ok=True)
+        try:
+            self.upload_dir.mkdir(parents=True, exist_ok=True)
+        except OSError:
+            import tempfile
+            self.upload_dir = Path(tempfile.gettempdir()) / "uploads"
+            self.upload_dir.mkdir(parents=True, exist_ok=True)
 
     def save_image(self, file: UploadFile) -> str:
         if not file.filename:
