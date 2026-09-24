@@ -1,0 +1,40 @@
+# Environment variables & secrets
+.env
+.env.*
+!.env.example
+!.env.local.example
+*.env
+backend/.env
+frontend/.env.local
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+*.db
+*.sqlite
+*.sqlite3
+test_campus360.db
+campus360.db
+campus360_local.db
+
+# Uploads
+backend/uploads/
+uploads/
+
+# Node / Next.js
+node_modules/
+frontend/node_modules/
+.next/
+frontend/.next/
+out/
+frontend/out/
+
+# Logs & Runtime
+*.log
+.local-runtime/
+.DS_Store
+Thumbs.db

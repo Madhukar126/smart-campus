@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: light; }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: #ffffff; color: #10251d; font-family: Arial, Helvetica, sans-serif; }
+
+@layer components {
+  .field { @apply w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm text-ink outline-none transition focus:border-leaf focus:ring-4 focus:ring-emerald-100; }
+  .label { @apply mb-2 block text-sm font-semibold text-ink; }
+  .primary-button { @apply w-full rounded-xl bg-forest px-5 py-3 font-bold text-white transition hover:bg-emerald-800 disabled:cursor-not-allowed disabled:opacity-60; }
+}
+
