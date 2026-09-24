@@ -1,0 +1,12 @@
+# Ignore everything except frontend for Vercel
+backend/
+database/
+docs/
+scripts/
+*.db
+*.sqlite*
+.venv/
+.pytest_cache/
+backend/.pytest_cache/
+frontend/node_modules/
+frontend/.next/

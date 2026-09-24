@@ -36,5 +36,8 @@ frontend/out/
 # Logs & Runtime
 *.log
 .local-runtime/
+.vercel/
+frontend/.vercel/
 .DS_Store
 Thumbs.db
+.vercel
