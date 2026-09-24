@@ -26,6 +26,19 @@ Campus360 is a full-stack, enterprise-grade campus facility issue reporting and 
 
 ---
 
+## 📂 Repository Structure
+
+```text
+smart-campus/
+├── frontend/     # Next.js 15 Web Application (App Router, Tailwind CSS, Recharts)
+├── backend/      # FastAPI Backend (SQLAlchemy 2, Pydantic, Alembic, JWT Auth)
+├── database/     # Standalone DDL schema.sql, seed.sql, and DB documentation
+├── docs/         # Specifications (Architecture, Database Schema, API Endpoints)
+└── scripts/      # PowerShell helper scripts for local non-Docker development
+```
+
+---
+
 ## ✨ Features by User Role
 
 ### 👨‍🎓 Students & Faculty Staff
